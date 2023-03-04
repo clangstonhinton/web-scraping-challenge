@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container text-center">
+      <h1 class="jumbotron">Mission to Mars</h1>
+      <br>
+      <!-- Mars Data scrape button -->
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+      <br>
+    </div>
+ 
+      <!-- Mars new title and paragraph -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Latest Mars News:</h2>
+        <br>
+        <h4>{{ mars.title }}</h4>
+        <p>{{ mars.paragraph }}</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Featured Mars image -->
+  <div class="row">
+    <div class="col-lg-8">
+      <h2>Featured Image from Mars</h2>
+      <img src="{{mars.featured_image}}" alt="Featured Image from Mars Image" width: 50%>
+    </div>
+
+    <!-- Mars Fact Table -->
+    <div class="col-lg-3 mt-lg-5">
+      <h4>Mars Facts</h4>
+      <div class="table table-striped">
+        {{mars.mars_facts_table|safe}}
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <!-- Mars Hemispheres -->
+  <div class="row row-cols-4 row-cols-lg-2 g-2 g-lg-3 mt-5">
+    <div class="col">
+      <h2 class="align-items-center">Mars Hemispheres</h2>
+    </div>
+  </div>
+  <div class="card-group">
+
+    <!-- Begin the for loop to retrieve hemisphere image urls and titles -->
+    {% for hemisphere in mars.hemisphere_images %}
+    <div class="card p-4">
+      <img class="card-img-top img-fluid w-lg-50 w-md-25 w-75" src="{{hemisphere.img_url}}" alt="Card image cap" class="center-block">
+      <div class="card-body px-0 pb-0">
+        <p class="card-text"> <b>{{hemisphere.title}}</b></p>
+      </div>
+    </div>
+    <!-- End the for loop -->
+    {% endfor %}
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="flex-wrapper" style="height:100px;"></div>
+    <div class="footer"> &copy; Copyright C. Langston Hinton 2023</div>
+  </footer>
+
+</body>
+
+</html>
