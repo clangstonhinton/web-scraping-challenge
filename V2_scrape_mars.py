@@ -130,6 +130,12 @@ def scrape():
     # Build dictionary for FEATURED IMAGE from the scraped data
     hemis = results.find_all('div', class_='item')
 
+<img class="thumb" src="images/39d3266553462198bd2fbc4d18fbed17_cerberus_enhanced.tif_thumb.png" alt="Cerberus Hemisphere Enhanced thumbnail">
+
+<a id="wide-image-toggle" class="open-toggle" href="#open">Open</a>
+
+<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://marshemispheres.com/images/full.jpg" width="414" height="414">
+
     # Create an empty list to store the data
     hemisphere_image_urls = []
 
