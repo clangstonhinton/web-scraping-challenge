@@ -8,8 +8,9 @@
 ## Approach
 
 (1) Using Pandas and Juptyer Notebook, scraped the following websites for source data:
-
     - https://redplanetscience.com for the most recent NASA news regarding the Mission to Mars
+
+    
     - XX to scrape the URL of the featured image on the website
     - XX to srape the images and names of all 4 hemisphere images
     - XX to scrape the Mars facts HTML table
