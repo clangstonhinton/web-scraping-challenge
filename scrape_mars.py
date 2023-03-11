@@ -17,8 +17,14 @@ import time
 
 def scrape():
     executable_path = {'executable_path': ChromeDriverManager().install()}
+    # print("executable path {}".format(executable_path)) 
+
+    # executable_path = 'Users/charlissapayne/.wdm/drivers/chromedriver/mac64/110.0.5481/'
     browser = Browser('chrome', **executable_path, headless=False)
-    
+
+      
+
+
     # Create an empty dict to save info to Mongo
     # mars_data = {}
     print("starting to scrape")
