@@ -2,11 +2,19 @@
 <img width="1050" alt="Screen Shot 2023-03-11 at 12 15 47 PM" src="https://user-images.githubusercontent.com/44728723/224502506-99587731-f543-4c0a-9b79-59979fe482b3.png">
 
 
-### Built an ETL pipeline using Python, Pandas, Python, Regex to extract, transform and load data into a SQL database.
+### Built web application that scrapes various websites for data related to the Mission to Mars and displayed the information in a single HTML page.
+
 
 ## Approach
 
-(1) After transforming the data, four CSV files were created and used to create an ERD and a table schema. Finally, CSV file data were uploaded into a Postgres database.
+(1) Using Pandas and Juptyer Notebook, scraped the following websites for source data:
+
+    - (https://redplanetscience.com/) for the most recent NASA news regarding the Mission to Mars
+    - XX to scrape the URL of the featured image on the website
+    - XX to srape the images and names of all 4 hemisphere images
+    - XX to scrape the Mars facts HTML table
+
+
 
 (2) The four dataframes (Category, Subcategory, Contacts and Campaigns) were created from data imported from two source data Excel files (contacts.xlsx and crowdfunding.xlsx).
 
@@ -53,8 +61,7 @@
 
 ## Technology
 - pandas
-- python
-- JSON
-- SQL
-- PostgreSQL
-- Regex
+- beautifulsoup
+- requests/splinter
+- flask
+- mongoDB
