@@ -8,7 +8,10 @@
 ## Approach
 
 (1) Using Pandas and Juptyer Notebook, scraped the following websites for source data:
+
     - https://redplanetscience.com for the most recent NASA news regarding the Mission to Mars
+    
+    - https://spaceimages-mars.com for the URL of the featured image
 
     
     - XX to scrape the URL of the featured image on the website
