@@ -25,8 +25,8 @@
 - To see the live version of the website application, download the source code and run the following in order:  scrape_mars.py / app.py / index.html
 - Click on the "Scrape New Data" button to load updated information
 
+<img width="700" alt="Screen Shot 2023-03-16 at 9 13 22 AM" src="https://user-images.githubusercontent.com/44728723/225627838-773faaeb-3f72-4c98-9088-e8c59674cb2d.png">
 
-<img width="392" alt="Screen Shot 2023-03-16 at 9 10 35 AM" src="https://user-images.githubusercontent.com/44728723/225627086-ed194e74-23b5-4121-b81a-589df3335cbe.png">
 
 
 ## Technology
