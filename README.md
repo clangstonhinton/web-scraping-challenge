@@ -20,6 +20,14 @@
 - Created a root route / that queries the Mongo database and passes the mars data into an HTML template to display the data.
 - Created a template HTML file called index.html that takes the mars data dictionary and displays all of the data in the appropriate HTML elements. 
  
+## Example Website App
+
+- To see the live version of the website application, download the source code and run the following in order:  scrape_mars.py / app.py / index.html
+- Click on the "Scrape New Data" button to load updated information
+
+
+<img width="392" alt="Screen Shot 2023-03-16 at 9 10 35 AM" src="https://user-images.githubusercontent.com/44728723/225627086-ed194e74-23b5-4121-b81a-589df3335cbe.png">
+
 
 ## Technology
 - pandas
